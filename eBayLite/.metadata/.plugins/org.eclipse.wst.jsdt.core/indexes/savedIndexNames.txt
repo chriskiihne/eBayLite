@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+C:\Users\Chris\Desktop\homework\softwareEngineering\eBayLite\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+2124759859.index
+2714536917.index
+1812511215.index
+1009904797.index
+3336748582.index
+4006939661.index
