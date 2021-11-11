@@ -7,7 +7,7 @@ import java.sql.ResultSet;
 public class Security {
 	private static Connection connection = null;
 	
-	public static void addUser(String email, String password) {
+	public static boolean addUser(String email, String password) {
 		if (!doesUserExist(email))
 		{
 			String insertSql = "INSERT INTO Users (id, EMAIL, PASSWORD) values (default, ?, ?)";
@@ -22,7 +22,10 @@ public class Security {
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
+			return doesUserExist(email);
 		}
+		
+		return false;
 	}
 	
 	public static boolean authenticate(String email, String password) {
