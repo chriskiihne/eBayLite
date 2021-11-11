@@ -7,6 +7,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import util.Security;
 
@@ -34,11 +35,17 @@ public class Login extends HttpServlet {
 		boolean validLogin = Security.authenticate(email, password);
 		
 		// TODO test that it works + change results of success/failure as needed
+		response.setContentType("text/html");  
 		if (validLogin) {
-			response.getWriter().append("Login Successful.");
+			HttpSession session = request.getSession();
+            session.setAttribute("email", email);
+            // Check if null with request.getSession().getAttribute("email") before accessing page with restricted access
+			response.getWriter().append("<h3>Login Successful.</h3>");
+			request.getRequestDispatcher("Login.html").include(request, response);
 		}
 		else {
-			response.getWriter().append("Login Failed.");
+			response.getWriter().append("<h3>Login Failed.</h3>");
+			request.getRequestDispatcher("Login.html").include(request, response);  
 		}
 	}
 

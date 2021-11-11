@@ -34,13 +34,15 @@ public class Register extends HttpServlet {
 		String password = request.getParameter("password");
 		String rePassword = request.getParameter("rePassword");
 		
-		if (!(email.equals(reEmail) || password.equals(rePassword))) {
+		response.setContentType("text/html");
+		if (!(email.equals(reEmail) && password.equals(rePassword))) {
 			if (!email.equals(reEmail)) {
-				response.getWriter().append("Emails do not match. <br />");
+				response.getWriter().append("<b>Emails do not match.</b><br />");
 			}
 			if (!password.equals(rePassword)) {
-				response.getWriter().append("Passwords do not match. <br />");
+				response.getWriter().append("<b>Passwords do not match.</b><br />");
 			}
+			request.getRequestDispatcher("Register.html").include(request, response);
 		}
 		else {
 			boolean userAdded = Security.addUser(email, password);
@@ -50,10 +52,11 @@ public class Register extends HttpServlet {
 				response.sendRedirect("/eBayLite/Login.html");
 			}
 			else {
-				response.getWriter().append("Failed to Add User.");
+				response.getWriter().append("<b>Failed to Add User.</b><br />");
 				if(Security.doesUserExist(email)) {
-					response.getWriter().append("<br />User already Exists.");
+					response.getWriter().append("<b>User already Exists.</b>");
 				}
+				request.getRequestDispatcher("Register.html").include(request, response);  
 			}
 		}
 	}

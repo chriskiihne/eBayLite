@@ -10,7 +10,7 @@ public class Security {
 	public static boolean addUser(String email, String password) {
 		if (!doesUserExist(email))
 		{
-			String insertSql = "INSERT INTO Users (id, EMAIL, PASSWORD) values (default, ?, ?)";
+			String insertSql = "INSERT INTO users (id, EMAIL, PASSWORD) values (default, ?, ?)";
 			try {
 				connection = DBConnection.getConnection();
 				PreparedStatement preparedStmt = connection.prepareStatement(insertSql);
@@ -33,7 +33,7 @@ public class Security {
 	}
 	
 	public static boolean doesUserExist(String email) {
-		String selectSql =  " SELECT * FROM Users WHERE EMAIL=?";
+		String selectSql =  " SELECT * FROM users WHERE EMAIL=?";
 		boolean found = false;
 	
 		try {
@@ -53,7 +53,7 @@ public class Security {
 	}
 	
 	private static String getPassword(String email) {
-		String selectSql =  " SELECT PASSWORD FROM Users WHERE EMAIL=?";
+		String selectSql =  " SELECT PASSWORD FROM users WHERE EMAIL=?";
 		String password = null;
 	
 		try {
