@@ -1,0 +1,83 @@
+<html lang="en">
+   <head>
+      <title>eBay Lite Auction Setup</title>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,500|Roboto:700">
+      <style>
+         :root {
+         --roboto: 'Roboto';
+         --poppins: 'Poppins';
+         --headerHeight: 100px;
+         --footerHeight: 100px;
+         }
+         * {
+         box-sizing: border-box;
+         }
+         body {
+         margin: 0px;
+         font-family: var(--poppins);
+         }
+         .header {
+         padding: 22px;
+         width: 100%;
+         height: var(--headerHeight);
+         background: linear-gradient(135deg, #80ff72, #7ee8fa);
+         z-index: 1;
+         margin: 0px;
+         }
+         .header > a {
+         font-size: 24px;
+         line-height: 24px;
+         font-weight: 500;
+         }
+         .footer {
+         width: 100%;
+         height: var(--footerHeight);
+         background: linear-gradient(135deg, #20bf55, #01baef);
+         }
+         .content {
+         text-align: center;
+         width: 100%;
+         height: calc(100vh - var(--headerHeight) - var(--footerHeight));
+         background: linear-gradient(135deg, white, grey);
+         }
+         .content h1, .footer h1 {
+         font-size: 48px;
+         font-weight: 400;
+         line-height: 48px;
+         position: relative;
+         margin: 0px;
+         }
+         .content h2, .footer p {
+         font-size: 20px;
+         font-weight: 500;
+         line-height: 24px;
+         position: relative;
+         }
+         .footer h1 {
+         font-size: 30px;
+         line-height: 30px;
+         }
+      </style>
+   </head>
+   <body>
+      <div class="header">
+         <a href="Homepage.html">eBay Lite</a>
+      </div>
+      <div class="content">
+         <h1>eBay Lite Auction Setup</h1>
+         <h2>
+         Insert information about item here</h2>
+         <form action="Auction" method="POST">
+            Item Name: <input id="ItemName" name="ItemName" type="text"> <br />
+            Description of item: <input id="Description" name="Description" type="text"> <br /> 
+            Starting Bid: <input id="StartingBid" name ="StartingBid"type="number"> <br />
+            Length of Auction in Days (1-7): <input id="AuctionLength" name="AuctionLength" type="number" min="1" max="7"> <br />
+            <input type="submit" value="Submit" />
+         </form>
+      </div>
+      <div class="footer">
+         <h1>eBay Lite</h1>
+         <p>eBay Lite strives to create a service that its users can be proud of and enjoy using.</p>
+      </div>
+   </body>
+</html>
