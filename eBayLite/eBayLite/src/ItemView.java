@@ -96,8 +96,7 @@ public class ItemView extends HttpServlet {
 				"		<nav>\n" + 
 				"		<a href=\"Homepage\">Home</a>\n" + 
 				"		</nav>\n" + 
-				"		<section>\n" + 
-				"			<p> Item View Page </p>\n");
+				"		<section>\n");
 		try {
 	         DBConnection.getDBConnection();
 	         connection = DBConnection.connection;
@@ -128,6 +127,11 @@ public class ItemView extends HttpServlet {
 	            out.println("<p> description: " + description + "</p>\n");
 	            out.println("<p> auctioneerID: " + auctioneerID + "</p>\n");
 	            out.println("<p> highestBidderID: " + highestBidderID + "</p>\n");
+	            out.println("<form action=\"Bidding\" method=\"POST\">");
+	            out.println("Bid: <input type=\"text\" name=\"Bid\"> <br />");
+	            out.println("Confirm with item id: <input type=\"text\" name=\"id\"> <br />");
+	            out.println("<input type=\"submit\" value=\"Submit\" />");
+	            out.println("</form>");
 	            }
 				out.println("</section>\n" + 
 				"	<footer>\n" + 
@@ -156,7 +160,6 @@ public class ItemView extends HttpServlet {
 	    	}
 	    }
 	}
-
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */

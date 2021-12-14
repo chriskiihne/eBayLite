@@ -103,7 +103,7 @@ public class Homepage extends HttpServlet {
 				String name = rs.getString("name");
 				String auctionStart = rs.getString("auctionstart");
 				String auctionEnd = rs.getString("auctionend");
-				out.println("<a href=\"ItemView.html?item=" + id + "\" id=\"" + id + "\">" + name + " " + auctionStart + " " + auctionEnd + "</a>");
+				out.println("<a href=\"ItemView?item=" + id + "\" id=\"" + id + "\">" + name + " " + auctionStart + " " + auctionEnd + "</a>");
 			}
 			rs.close();
 			preparedStatement.close();
