@@ -6,14 +6,12 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.Map;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 
 import util.DBConnection;
 
@@ -98,8 +96,7 @@ public class ItemView extends HttpServlet {
 				"		</nav>\n" + 
 				"		<section>\n");
 		try {
-	         DBConnection.getDBConnection();
-	         connection = DBConnection.connection;
+	         connection = DBConnection.getConnection();
 	         String selectSQL = "SELECT * FROM items WHERE id=" + id;
 	         
 	         preparedStatement = connection.prepareStatement(selectSQL);

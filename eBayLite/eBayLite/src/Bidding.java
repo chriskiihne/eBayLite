@@ -45,8 +45,7 @@ public class Bidding extends HttpServlet {
 		Connection connection = null;
 		String updateSql = "update items set CURRENTBID=" + Bid + " where id=" + id;
 		try {
-			DBConnection.getDBConnection();
-	        connection = DBConnection.connection;
+			connection = DBConnection.getConnection();
 	        String selectSQL = "SELECT * FROM items WHERE id=" + id;
 	        PreparedStatement preparedStmt = connection.prepareStatement(selectSQL);
 	        ResultSet rs = preparedStmt.executeQuery();
