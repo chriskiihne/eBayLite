@@ -16,36 +16,28 @@ import static org.junit.Assert.fail;
 
 import java.util.concurrent.TimeUnit;
 
-//import org.testng.Assert;
-//import org.testng.annotations.Test;
 
-//import static org.junit.Assert.*;
 
 public class RegisterTest {
 	private WebDriver driver;
-	private StringBuffer verificationErrors = new StringBuffer();
+	private static String chromePath = "/eBayLite/WebContent/WEB-INF/chromedriver.exe";
+	private static String systemPath = HomepageTest.class.getProtectionDomain().getCodeSource().getLocation().toExternalForm().replace("file:/", "").replace("eBayLite/build/classes/", "").replace("%20", " ");
+	
     
 	@Before
 	public void setUp() throws Exception {
-	    ///  System.setProperty("webdriver.chrome.driver", "lib//win//chromedriver.exe");
-	    //  driver = new ChromeDriver();
-	    //  baseUrl = "https://www.katalon.com/";
-	    //  driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		
-		
-		System.setProperty("webdriver.chrome.driver", "lib//win//chromedriver.exe"); 
+	  
+		System.setProperty("webdriver.chrome.driver", systemPath + chromePath);
+	 
 		 driver=new ChromeDriver(); 
-	//	driver.manage().window().maximize(); 
+	
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	   }
 
     @Test
     public void registerTest() throws Exception {    
 	
-    	//validRegistrationTest
-	//	System.setProperty("webdriver.chrome.driver", "lib//win//chromedriver.exe"); 
-	//	WebDriver driver=new ChromeDriver(); 
-	//	driver.manage().window().maximize(); 
+     
 	 
 		driver.get("http://chriskiihne.ddns.net:8080/eBayLite/Register.html"); 
               
@@ -73,17 +65,7 @@ public class RegisterTest {
                 
     }
     
-	//@After
-	  // public void tearDown() throws Exception {
-	    //  driver.quit();
-	     //String verificationErrorString = verificationErrors.toString();
-	     //if (!"".equals(verificationErrorString)) {
-	       // fail(verificationErrorString);
-	     //}
-	   //}
 
-
-///////////////////////////////////////////
 
 
 
