@@ -1,9 +1,9 @@
 package test;
 
+import org.junit.AfterClass;
 import  org.junit.Assert;//I added it
-import org.junit.Before;
+import org.junit.BeforeClass;
 import org.junit.Test;
-
 //import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -15,14 +15,14 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class LoginTest {
 	
 	
-private WebDriver driver;
+private static WebDriver driver;
 
 private static String chromePath = "/eBayLite/WebContent/WEB-INF/chromedriver.exe";
 private static String systemPath = HomepageTest.class.getProtectionDomain().getCodeSource().getLocation().toExternalForm().replace("file:/", "").replace("eBayLite/build/classes/", "").replace("%20", " ");
 
     
-	@Before
-	public void setUp() throws Exception {
+	@BeforeClass
+	public static void setUp() {
 	   		
 		System.setProperty("webdriver.chrome.driver", systemPath + chromePath);
 
@@ -30,6 +30,7 @@ private static String systemPath = HomepageTest.class.getProtectionDomain().getC
 		 driver=new ChromeDriver(); 
 	
 	   }
+	
 	@Test 
 	public void login() throws Exception  { 
 		
@@ -45,5 +46,9 @@ private static String systemPath = HomepageTest.class.getProtectionDomain().getC
 		Assert.assertEquals(expectedUrl,actualUrl); 
 	}   
 
+	@AfterClass
+	 public static void closeBrowser() {
+		driver.close();
+	 }
 
 }

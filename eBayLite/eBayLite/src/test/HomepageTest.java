@@ -54,8 +54,18 @@ public class HomepageTest {
 		List<WebElement> elements = driver.findElements(By.xpath("//section/a[contains(@href, 'ItemView?item')]"));
 		Assert.assertTrue("No Items on Homepage", elements.size() > 0);
 		
-		elements.get(0).click();
-		Assert.assertEquals("Item Page did not open", "Item View Page", driver.findElement(By.xpath("//section/p")).getText());
+		WebElement element = elements.get(0);
+		String[] info = element.getText().split(" ");
+		String name = info[0];
+		String start = info[1];
+		String end = info[2];
+		String id = element.getAttribute("href").split("=")[1];
+		
+		element.click();
+		Assert.assertEquals("Item ID on Item view is Incorrect", id, driver.findElement(By.xpath("//p[contains(text(), 'ID')]")).getText().split(": ")[1]);
+		Assert.assertEquals("Item Name on Item view is Incorrect", name, driver.findElement(By.xpath("//p[contains(text(), 'Name')]")).getText().split(": ")[1]);
+		Assert.assertEquals("Item Auction Start on Item view is Incorrect", start, driver.findElement(By.xpath("//p[contains(text(), 'auctionStart')]")).getText().split(": ")[1]);
+		Assert.assertEquals("Item Auction End on Item view is Incorrect", end, driver.findElement(By.xpath("//p[contains(text(), 'auctionEnd')]")).getText().split(": ")[1]);
 	}
 	
 
@@ -64,7 +74,6 @@ public class HomepageTest {
 
 	@AfterClass
 	 public static void closeBrowser() {
-		// TOOD
 		driver.close();
 	 }
 }
