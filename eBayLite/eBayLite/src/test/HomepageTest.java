@@ -51,7 +51,7 @@ public class HomepageTest {
 	@Test
 	public void testItems()
 	{
-		List<WebElement> elements = driver.findElements(By.xpath("//section/a[contains(@href, 'ItemView.html?item')]"));
+		List<WebElement> elements = driver.findElements(By.xpath("//section/a[contains(@href, 'ItemView?item')]"));
 		Assert.assertTrue("No Items on Homepage", elements.size() > 0);
 		
 		elements.get(0).click();

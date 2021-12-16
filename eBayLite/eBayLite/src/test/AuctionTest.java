@@ -71,7 +71,7 @@ public class AuctionTest {
 		
 		driver.get("http://chriskiihne.ddns.net:8080/eBayLite/Homepage");
 		
-		WebElement element = driver.findElement(By.xpath(String.format("//section/a[contains(@href, 'ItemView.html?item')][contains(text(), '%s')]", itemName)));
+		WebElement element = driver.findElement(By.xpath(String.format("//section/a[contains(@href, 'ItemView?item')][contains(text(), '%s')]", itemName)));
 		String itemListing = itemName + " " + LocalDate.now().toString() + " " + LocalDate.now().plusDays(1).toString();
 		Assert.assertEquals("Added Item does not Exist", itemListing, element.getText());
 	}

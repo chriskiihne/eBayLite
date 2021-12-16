@@ -9,5 +9,42 @@
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="C:/Users/Chris/Documents/GitHub/eBayLite/eBayLite/eBayLite/WebContent/WEB-INF/lib/selenium-api-4.1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Chris/Documents/GitHub/eBayLite/eBayLite/eBayLite/WebContent/WEB-INF/lib/selenium-api-4.1.0-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Chris/Documents/GitHub/eBayLite/eBayLite/eBayLite/WebContent/WEB-INF/lib/selenium-chrome-driver-4.1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Chris/Documents/GitHub/eBayLite/eBayLite/eBayLite/WebContent/WEB-INF/lib/selenium-chrome-driver-4.1.0-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Chris/Documents/GitHub/eBayLite/eBayLite/eBayLite/WebContent/WEB-INF/lib/selenium-chromium-driver-4.1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Chris/Documents/GitHub/eBayLite/eBayLite/eBayLite/WebContent/WEB-INF/lib/selenium-chromium-driver-4.1.0-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Chris/Documents/GitHub/eBayLite/eBayLite/eBayLite/WebContent/WEB-INF/lib/selenium-devtools-v85-4.1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Chris/Documents/GitHub/eBayLite/eBayLite/eBayLite/WebContent/WEB-INF/lib/selenium-devtools-v85-4.1.0-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Chris/Documents/GitHub/eBayLite/eBayLite/eBayLite/WebContent/WEB-INF/lib/selenium-devtools-v94-4.1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Chris/Documents/GitHub/eBayLite/eBayLite/eBayLite/WebContent/WEB-INF/lib/selenium-devtools-v94-4.1.0-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Chris/Documents/GitHub/eBayLite/eBayLite/eBayLite/WebContent/WEB-INF/lib/selenium-devtools-v95-4.1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Chris/Documents/GitHub/eBayLite/eBayLite/eBayLite/WebContent/WEB-INF/lib/selenium-devtools-v95-4.1.0-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Chris/Documents/GitHub/eBayLite/eBayLite/eBayLite/WebContent/WEB-INF/lib/selenium-devtools-v96-4.1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Chris/Documents/GitHub/eBayLite/eBayLite/eBayLite/WebContent/WEB-INF/lib/selenium-devtools-v96-4.1.0-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Chris/Documents/GitHub/eBayLite/eBayLite/eBayLite/WebContent/WEB-INF/lib/selenium-edge-driver-4.1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Chris/Documents/GitHub/eBayLite/eBayLite/eBayLite/WebContent/WEB-INF/lib/selenium-edge-driver-4.1.0-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Chris/Documents/GitHub/eBayLite/eBayLite/eBayLite/WebContent/WEB-INF/lib/selenium-firefox-driver-4.1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Chris/Documents/GitHub/eBayLite/eBayLite/eBayLite/WebContent/WEB-INF/lib/selenium-firefox-driver-4.1.0-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Chris/Documents/GitHub/eBayLite/eBayLite/eBayLite/WebContent/WEB-INF/lib/selenium-firefox-xpi-driver-4.1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Chris/Documents/GitHub/eBayLite/eBayLite/eBayLite/WebContent/WEB-INF/lib/selenium-firefox-xpi-driver-4.1.0-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Chris/Documents/GitHub/eBayLite/eBayLite/eBayLite/WebContent/WEB-INF/lib/selenium-http-4.1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Chris/Documents/GitHub/eBayLite/eBayLite/eBayLite/WebContent/WEB-INF/lib/selenium-http-4.1.0-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Chris/Documents/GitHub/eBayLite/eBayLite/eBayLite/WebContent/WEB-INF/lib/selenium-ie-driver-4.1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Chris/Documents/GitHub/eBayLite/eBayLite/eBayLite/WebContent/WEB-INF/lib/selenium-ie-driver-4.1.0-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Chris/Documents/GitHub/eBayLite/eBayLite/eBayLite/WebContent/WEB-INF/lib/selenium-java-4.1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Chris/Documents/GitHub/eBayLite/eBayLite/eBayLite/WebContent/WEB-INF/lib/selenium-java-4.1.0-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Chris/Documents/GitHub/eBayLite/eBayLite/eBayLite/WebContent/WEB-INF/lib/selenium-json-4.1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Chris/Documents/GitHub/eBayLite/eBayLite/eBayLite/WebContent/WEB-INF/lib/selenium-json-4.1.0-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Chris/Documents/GitHub/eBayLite/eBayLite/eBayLite/WebContent/WEB-INF/lib/selenium-opera-driver-4.1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Chris/Documents/GitHub/eBayLite/eBayLite/eBayLite/WebContent/WEB-INF/lib/selenium-opera-driver-4.1.0-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Chris/Documents/GitHub/eBayLite/eBayLite/eBayLite/WebContent/WEB-INF/lib/selenium-remote-driver-4.1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Chris/Documents/GitHub/eBayLite/eBayLite/eBayLite/WebContent/WEB-INF/lib/selenium-remote-driver-4.1.0-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Chris/Documents/GitHub/eBayLite/eBayLite/eBayLite/WebContent/WEB-INF/lib/selenium-safari-driver-4.1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Chris/Documents/GitHub/eBayLite/eBayLite/eBayLite/WebContent/WEB-INF/lib/selenium-safari-driver-4.1.0-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Chris/Documents/GitHub/eBayLite/eBayLite/eBayLite/WebContent/WEB-INF/lib/selenium-support-4.1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Chris/Documents/GitHub/eBayLite/eBayLite/eBayLite/WebContent/WEB-INF/lib/selenium-support-4.1.0-sources.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>

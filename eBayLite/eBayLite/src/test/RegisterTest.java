@@ -46,16 +46,16 @@ public class RegisterTest {
         WebElement email = driver.findElement(By.name("email"));
         email.sendKeys("test1@gmail.com");
         
-        WebElement confirmEmail = driver.findElement(By.name("email"));
+        WebElement confirmEmail = driver.findElement(By.name("reEmail"));
         confirmEmail.sendKeys("test1@gmail.com");
         
         WebElement password = driver.findElement(By.name("password"));
         password.sendKeys("test1");
         
-        WebElement confirmPassword = driver.findElement(By.name("confirmpassword"));
+        WebElement confirmPassword = driver.findElement(By.name("rePassword"));
         confirmPassword.sendKeys("test1");
               
-        WebElement signUp = driver.findElement(By.xpath("//button[contains(@class,'btn sign-up-btn-2 btn-block')]"));
+        WebElement signUp = driver.findElement(By.xpath("//input[@value='Register']"));
         signUp.click();
         
         String expectedURL = "http://chriskiihne.ddns.net:8080/eBayLite/Homepage";
