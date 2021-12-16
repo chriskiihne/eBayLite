@@ -3,17 +3,13 @@ import java.io.PrintWriter;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-import java.sql.ResultSetMetaData;
 import java.sql.SQLException;
-import java.time.LocalDate;
-import java.util.Date;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 
 import util.DBConnection;
 
@@ -88,6 +84,7 @@ public class Homepage extends HttpServlet {
 				"		<nav>\n" + 
 				"			<a href=\"/eBayLite/Login.html\">Login</a>\n" + 
 				"			<a href=\"/eBayLite/Auctioning.html\">Auctioning</a>\n" + 
+				"			<a href=\"/eBayLite/Logout\">Logout</a>\n" + 
 				"		</nav>\n" + 
 				"		<section>\n" + 
 				"			<h1> Items </h1>\n" + 
@@ -103,7 +100,7 @@ public class Homepage extends HttpServlet {
 				String name = rs.getString("name");
 				String auctionStart = rs.getString("auctionstart");
 				String auctionEnd = rs.getString("auctionend");
-				out.println("<a href=\"ItemView.html?item=" + id + "\" id=\"" + id + "\">" + name + " " + auctionStart + " " + auctionEnd + "</a>");
+				out.println("<a href=\"ItemView?item=" + id + "\" id=\"" + id + "\">" + name + " " + auctionStart + " " + auctionEnd + "</a>");
 			}
 			rs.close();
 			preparedStatement.close();
